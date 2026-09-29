@@ -50,50 +50,32 @@
     <div class="container">
         <div class="row">
             <main class="col-8">
-                <h2 class="display-3 mt-5 mb-2 text-primary">Sports</h2>
-                <div class="row" id="sports">
-                   
-                </div>
-                <h2 class="display-3 mt-5 mb-2 text-primary">Entertainment</h2>
-                <div class="row" id="Entertainment">
-                   
-                </div>
-                <h2 class="display-3 mt-5 mb-2 text-primary">Politics</h2>
-                <div class="row" id="Politics">
-                   
-                </div>
-            </main>
-            <aside class="col-4">
-                <section id="temp" class="text-center mb-5">
-                    <img src="temp.png" class="img-fluid" alt="">
-                    <h2>39 C</h2>
-                    <h3>Asyiut</h3>
-                </section>
-                <section id="currency" class="text-center mb-5">
-                     <h4 class="mb-3 display-5 text-primary">Currency Rates</h4>
-                </section>
-                <section id="live-matches" class="text-center mb-5">
-                    <h4 class="mb-3 display-5 text-primary">Live Matches</h4>
-                    <div class="row" id="matches">
-                        
-                    
-                </section>
-            </aside>
+                <div id="row">
+                <label class="fs-3 mt-5" >From</label>
+                <select class=" form-select mb-2 "id="from">
+                    <option value="USD">USD</option>
+                     <option value="SAR">SAR</option>
+                      <option value="EUR">EUR</option>
+
+                </select>
+                <label class="fs-3">To</label>
+                <select class=" form-select mb-2" id="To">
+                     <option value="EGP">EGP</option>
+                     <option value="AED">AED</option>
+                      
+                </select>
+              
+                <labe class="fs-3 mt-2 mb-3 " >Amount</label>
+                <input type="number"class="form-control mt-2"id="amount">
+                <p id="Converted">Converted Amount</p>
+             
+                
+</div>
+
+
+                </main>
         </div>
     </div>
-    <footer class="mt-5 bg-info py-2">
-        <p class="text-center">All Rights reserved to Know IT for Latest News 2026</p>
-    </footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-      <script src="./new js/news.js"></script>
-      <script src="./new js/Currency.js"></script>
-        <script src="./new js/app.js"></script>
-
+    <script src="new js/convert.js"></script>
 </body>
-
 </html>
